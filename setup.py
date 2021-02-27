@@ -21,6 +21,9 @@ setup(
     entry_points={
         "console_scripts": [
             "GEPace = gepace.tango.server:main [tango]",
+        ],
+        'sinstruments.device': [
+            'Pace = gepace.simulator:Pace [simulator]'
         ]
     },
     extras_require={
